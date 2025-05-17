@@ -296,3 +296,4 @@ export default function CaptionBox() {
     </motion.div>
   );
 }
+

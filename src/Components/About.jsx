@@ -9,7 +9,7 @@ export default function About() {
       color: "from-indigo-900 to-indigo-950",
       features: [
         "PyTorch for core tensor operations & training",
-        "VGG16 + LSTM with Bahdanau Attention",
+        "ResNet101 + LSTM with Attention",
         "Custom tokenization & vocabulary",
         "Beam Search for caption generation",
         "NLTK/TorchMetrics for evaluation (BLEU-4, CIDEr)"
