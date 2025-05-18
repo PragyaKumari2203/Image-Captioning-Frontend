@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
-import logo from '../assets/logo2.png'; 
+import logo from '../assets/logo6.png'; 
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,13 +18,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'py-0' : 'py-2'}`}>
-      <nav className={`bg-gradient-to-b from-black/90 to-black/70 backdrop-blur-lg border-b ${scrolled ? 'border-white/10' : 'border-transparent'} shadow-xl px-4 py-3 md:px-8 md:py-4 flex justify-between items-center max-w-full md:max-w-7xl mx-auto rounded-b-2xl transition-all duration-500`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? 'py-0' : 'py-1'}`}>
+      <nav className={`bg-gradient-to-b from-black/90 to-black/70 backdrop-blur-lg border-b ${scrolled ? 'border-white/10' : 'border-transparent'} shadow-xl px-2 py-1 md:px-4 md:py-2 flex justify-between items-center max-w-full md:max-w-7xl mx-auto rounded-b-2xl transition-all duration-500`}>
         <Link to="/" className="flex items-center space-x-2 group">
         <img
   src={logo}
   alt="Logo"
-  className="h-10 w-15 object-contain transition-transform duration-300 group-hover:scale-105"
+  className="h-16 w-20 object-contain transition-transform duration-300 group-hover:scale-105"
 />
 
 </Link>
