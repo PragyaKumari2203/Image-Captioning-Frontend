@@ -12,14 +12,14 @@ export default function About() {
         "ResNet101 + LSTM with Attention",
         "Custom tokenization & vocabulary",
         "Beam Search for caption generation",
-        "NLTK/TorchMetrics for evaluation (BLEU-4, CIDEr)"
+        "NLTK for evaluation (BLEU-4)"
       ],
       details: [
         "Image preprocessing with TorchVision (resize, normalize)",
         "Special tokens: <start>, <pad>, <unk>, <end>",
         "PIL for image loading and augmentations",
         "GPU-accelerated training (CUDA via PyTorch)",
-        "Model size: ~500MB"
+        "Model size: ~200MB"
       ]
     },
     {
@@ -27,8 +27,8 @@ export default function About() {
       icon: <FiServer className="text-3xl" />,
       color: "from-rose-900 to-rose-950",
       features: [
-        "REST API for model interaction",
-        "Model hosted on Runway",
+        "CORS for model interaction",
+        "Model accessible through Google Drive",
         "Efficient image handling",
         "Scalable architecture",
         "Secure endpoints"
@@ -197,9 +197,9 @@ export default function About() {
           
           <div className="text-gray-300 space-y-4">
             {[
-              "Frontend captures user image and sends to backend via REST API",
-              "Backend preprocesses image and sends to ML model hosted on Runway",
-              "VGG16 extracts image features which are fed into LSTM with attention",
+              "Frontend captures user image and sends to backend via CORS request",
+              "Backend preprocesses image and sends to ML model hosted on Google Drive",
+              "Resnet101 extracts image features which are fed into LSTM with attention",
               "Model generates caption using beam search and special tokens",
               "Caption returns through backend to frontend for display with animations"
             ].map((step, i) => (

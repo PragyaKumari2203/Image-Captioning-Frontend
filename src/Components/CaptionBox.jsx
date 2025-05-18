@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
@@ -33,8 +32,7 @@ export default function CaptionBox() {
   
       const formData = new FormData();
       formData.append("image", file);
-  
-      const response = await fetch("http://192.168.29.178:8000/caption", {
+      const response = await fetch("http://127.0.0.1:8000/caption", {
         method: "POST",
         mode: "cors",
         credentials: "include",
